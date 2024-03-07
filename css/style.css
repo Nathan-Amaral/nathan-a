@@ -1,0 +1,339 @@
+body {
+    background-color: #1C263D;
+    color: #F8DE65;
+    font-family: "Bauhaus 93",sans-serif;
+    cursor: none;
+}
+.scroller {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    z-index: 1000;
+    background: linear-gradient(to right, #F8DE65 100%, red 100%);
+    background-repeat: no-repeat;
+    background-size: 0;
+    transform-origin: left;
+    animation: scroll linear;
+    animation-timeline: scroll();
+    animation-range-start: cover 100px;
+    animation-range-end: cover 100%;
+
+}
+@keyframes scroll {
+    from {
+        background-size: 0% 5px;
+    }
+    to {
+        background-size: 100% 5px;
+    }
+}
+
+
+
+.custom-cursor {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background-color: #F8DE65;
+    pointer-events: none;
+    z-index:999999;
+    mix-blend-mode: exclusion;
+    transform-origin: center;
+    transition: transform ease .3s;
+}
+
+.container {
+    background-color: #1C263D;
+}
+a {
+    cursor: none;
+    text-underline: none;
+    color: #F8DE65;
+}
+a:hover {
+    text-decoration: none;
+    color: #fff;
+    border-color: #ffffff;
+}
+input {
+    border: none;
+    background-color: #1C263D;
+    color: #F8DE65;
+    outline: none;
+    cursor: none;
+}
+textarea {
+    border: none;
+    background-color: #1C263D;
+    color: #F8DE65;
+    outline: none;
+    cursor: none;
+}
+label {
+    cursor: none;
+}
+h2 {
+    font-size: 5rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+.font-text {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.font-text-veille {
+    font-size: 3.6rem;
+    line-height: 5rem;
+
+    @media (min-width: 320px) {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+}
+h1 {
+    font-family: "Kunstler Script", sans-serif;
+    font-size: 11rem;
+    font-weight: 500;
+    color: #F8DE65;
+    display: inline-block;
+    margin-top: 100px;
+    position: relative;
+    text-align: center;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 2px;
+    background: #F8DE65;
+    right: -15px;
+    top: 0;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-container {
+    display: inline-block;
+    animation: revealText 6s steps(28) forwards;
+}
+.img-lac {
+
+    box-shadow: 8px 8px 42px #555;
+}
+
+.menu {
+    display:flex;
+    padding-top: 20px;
+    justify-content:space-around;
+    opacity:0.60;
+    position:fixed;left:0;right:0;top:0;
+    z-index: 1000;
+}
+
+.menu li {
+    list-style-type: none ;
+}
+.menu a {
+    font-family: 'Magneto', sans-serif;
+    display:block;
+    min-width:120px;
+    margin:0.2rem;
+    padding:0.6rem 0;
+    text-align:center;
+    color: rgb(15, 14, 14);
+    text-decoration:none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    transition: all ease .25s;
+
+}
+.menu a.actif {
+    color: #F8DE65;
+    border-color: #F8DE65;
+}
+
+.menu a:hover.actif {
+    background-color: #534e51;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.card {
+    width: 300px;
+    height: 450px;
+    perspective: 1000px;
+}
+.content-card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: all 0.15s ease-out;
+}
+.content-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reflect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.15s ease-out;
+    border-radius: 25px;
+    mix-blend-mode: hard-light;
+    background: radial-gradient(circle at 50% 0%, rgb(184, 196, 211), transparent);
+
+}
+.img-competence {
+    width: 60%;
+    height: auto;
+    margin-left: 30px;
+    position: relative;
+}
+.img-langue {
+    width: 40%;
+    height: auto;
+    margin-left: 65px;
+}
+.fa-size {
+    font-size: 5rem;
+}
+.hover01 img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all ease .25s;
+    transition: all ease .25s;
+}
+.hover02 div span {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    color: #F8DE65;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    transition: all ease .25s;
+    opacity: 0;
+}
+
+.hover02:hover div span {
+    bottom: -36px;
+    opacity: 1;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.subtitle {
+    position: relative;
+    display: inline;
+    text-decoration: none;
+}
+
+.subtitle::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 5px;
+    background-color: #F8DE65;
+    transition: all ease .55s;
+}
+
+.subtitle:hover::after {
+    width: 100%;
+}
+.subtitle2 {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 1px;
+    text-decoration: none;
+    position: relative;
+}
+.subtitle2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: #F8DE65;
+    transition: all ease .25s;
+}
+
+.subtitle2:hover::after {
+    width: 100%;
+}
+.ball {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #F8DE65;
+    animation: bounce 0.4s ease-out alternate infinite;
+}
+
+.ball:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.ball:nth-child(3) {
+    animation-delay: 1s;
+}
+@keyframes bounce {
+    100% {
+        translate: 0 -17px
+    }
+}
+
+#btn-submit {
+        position: absolute;
+        bottom: 0;
+        text-decoration: none ;
+        background: none;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 1.2;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        -webkit-text-stroke: 2px #F8DE65;
+        color: transparent;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#btn-submit:hover {
+    background: none;
+    border: none;
+    color: #F8DE65;
+    cursor: none;
+}
