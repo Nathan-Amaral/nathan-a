@@ -30,8 +30,6 @@ body {
     }
 }
 
-
-
 .custom-cursor {
     position:fixed;
     top: 0;
@@ -77,27 +75,8 @@ textarea {
 label {
     cursor: none;
 }
-h2 {
-    font-size: 5rem;
-}
-h3 {
-    font-size: 2.5rem;
-}
-.font-text {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-}
-.font-text-veille {
-    font-size: 3.6rem;
-    line-height: 5rem;
-
-    @media (min-width: 320px) {
-        font-size: 1.8rem;
-        line-height: 2.5rem;
-    }
-}
 h1 {
-    font-family: "Kunstler Script", sans-serif;
+    font-family: "Bauhaus 93", sans-serif;
     font-size: 11rem;
     font-weight: 500;
     color: #F8DE65;
@@ -118,7 +97,28 @@ h1::after {
     top: 0;
     animation: cursor 1s infinite;
 }
+h2 {
+    font-size: 5rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+.mb-10 {
+    margin-bottom: 6rem !important;
+}
+.font-text {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.font-text-veille {
+    font-size: 3.6rem;
+    line-height: 5rem;
 
+    @media (min-width: 320px) {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+}
 @keyframes cursor {
 
     0% {
@@ -138,11 +138,6 @@ h1::after {
     display: inline-block;
     animation: revealText 6s steps(28) forwards;
 }
-.img-lac {
-
-    box-shadow: 8px 8px 42px #555;
-}
-
 .menu {
     display:flex;
     padding-top: 20px;
@@ -221,12 +216,6 @@ h1::after {
 }
 .fa-size {
     font-size: 5rem;
-}
-.hover01 img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: all ease .25s;
-    transition: all ease .25s;
 }
 .hover02 div span {
     position: absolute;
