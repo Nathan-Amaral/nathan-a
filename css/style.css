@@ -175,9 +175,9 @@ h3 {
     border-color: #ffffff;
 }
 .card {
-    width: 300px;
-    height: 450px;
-    perspective: 1000px;
+    width: 18.75em;
+    height: 28.125em;
+    perspective: 62.5em;
 }
 .content-card {
     width: 100%;
@@ -227,7 +227,7 @@ h3 {
     margin: 0;
     padding: 0;
     color: #F8DE65;
-    font-size: 18px;
+    font-size: 1.125em;
     text-decoration: none;
     text-align: center;
     transition: all ease .25s;
@@ -235,7 +235,7 @@ h3 {
 }
 
 .hover02:hover div span {
-    bottom: -36px;
+    bottom: -2.25em;
     opacity: 1;
     text-align: center;
 }
@@ -259,7 +259,6 @@ form {
     background-color: #F8DE65;
     transition: all ease .55s;
 }
-
 .subtitle:hover::after {
     width: 100%;
 }
@@ -280,46 +279,51 @@ form {
     background-color: #F8DE65;
     transition: all ease .25s;
 }
-
 .subtitle2:hover::after {
     width: 100%;
 }
-.ball {
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 50%;
-    background-color: #F8DE65;
-    animation: bounce 0.4s ease-out alternate infinite;
+.wavy {
+    position: relative;
+    text-align: center;
 }
-
-.ball:nth-child(2) {
-    animation-delay: 0.5s;
+.wavy span {
+    position: relative;
+    display: inline-block;
+    color: #F8DE65;
+    font-size: 2em;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
 }
-.ball:nth-child(3) {
-    animation-delay: 1s;
-}
-@keyframes bounce {
-    100% {
-        translate: 0 -17px
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    20%
+    {
+        transform: translateY(-20px);
+    }
+    40%,100%
+    {
+        transform: translateY(0px);
     }
 }
-
 #btn-submit {
         position: absolute;
         bottom: 0;
         text-decoration: none ;
         background: none;
         font-weight: bold;
-        font-size: 50px;
+        font-size: 6.25rem;
         line-height: 1.2;
         padding: 0;
         border: none;
         border-radius: 0;
         -webkit-text-stroke: 2px #F8DE65;
         color: transparent;
-        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
-
 #btn-submit:hover {
     background: none;
     border: none;
