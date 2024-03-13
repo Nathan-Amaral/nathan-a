@@ -111,21 +111,25 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 
-// h2
-function reveal() {
-    let item = document.querySelectorAll('h2');
-    for (var i = 0; i < item.length; i++) {
-        let windowHeight = window.innerHeight;
-        let elementTop = item[i].getBoundingClientRect().top;
-        let elementVisible = 300;
+// stars
 
-        if (elementTop < windowHeight - elementVisible) {
-            item[i].classList.add("active")
-        } else {
-            item[i].classList.remove("active")
+function stars(){
+        let e = document.createElement('div');
+        e.setAttribute('class','star');
+        document.body.appendChild(e);
+        e.style.left = Math.random() * + innerWidth + 'px';
 
-        }
+        let size = Math.random() * 12;
+        let duration = Math.random() * 3;
 
-    }
+        e.style.fontSize = 12 + size + 'px';
+        e.style.animationDuration = 2 + duration + 's';
+
+        setTimeout(function(){
+            document.body.removeChild(e);
+        },5000)
 }
-window. addEventListener("scroll" , reveal);
+
+setInterval(function(){
+    stars()
+},100)
