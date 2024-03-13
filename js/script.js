@@ -17,12 +17,12 @@ typewriter(txt, index + 1)
 }
 
 }
-
 setTimeout(() => {
 
 typewriter(txt, 0)
 
-}, 500);
+}, 200);
+
 
 //timer
 document.addEventListener('DOMContentLoaded', function () {
