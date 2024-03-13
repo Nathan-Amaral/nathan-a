@@ -227,7 +227,6 @@ h4 {
     color: #F8DE65;
     border-color: #F8DE65;
 }
-
 .menu a:hover.actif {
     background-color: #534e51;
     color: #ffffff;
@@ -260,7 +259,45 @@ h4 {
     border-radius: 25px;
     mix-blend-mode: hard-light;
     background: radial-gradient(circle at 50% 0%, rgb(184, 196, 211), transparent);
-
+}
+.box {
+    width: 100%;
+    transform-style: preserve-3d;
+}
+.box div {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: turn 20s linear infinite;
+}
+@keyframes turn {
+    0% {
+        transform: perspective(1000px) rotateX(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateX(360deg);
+    }
+}
+.box div span {
+    position: absolute;
+    inset: 0;
+    transform: rotateX(calc(var(--i) * 15deg));
+}
+.box div span::before {
+    content: 'Compétences';
+    position: absolute;
+    width: 100%;
+    height:100px;
+    font-size: 5rem;
+    text-align: center;
+    -webkit-text-stroke: 2px #000;
+    text-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+.box div span:nth-child(3n+2):before {
+    color: navajowhite;
+}
+.box div span:nth-child(3n+3):before {
+    color: white;
 }
 .img-competence {
     width: 60%;
@@ -292,7 +329,6 @@ h4 {
     transition: all ease .25s;
     opacity: 0;
 }
-
 .hover02:hover div span {
     bottom: -2.25em;
     opacity: 1;
