@@ -18,7 +18,6 @@ body {
     animation-timeline: scroll();
     animation-range-start: cover 100px;
     animation-range-end: cover 100%;
-
 }
 @keyframes scroll {
     from {
@@ -189,62 +188,144 @@ h4 {
     mix-blend-mode: hard-light;
     background: radial-gradient(circle at 50% 0%, rgb(184, 196, 211), transparent);
 }
-.wrapper {
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    font-size: 5rem;
+.text-card {
+    max-height: 28.125em;
+}
+.skill {
     position: relative;
+    width: 100%;
+    text-align: center;
+    filter: url(#fire);
 }
-.wrap {
-    text-transform: uppercase;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    margin: 0;
-    position: absolute;
-    font-size: 18vw;
-    font-weight: 700;
-    text-shadow: 1px 4px 6px #e6e2df;
-    white-space: nowrap;
-}
-.wrapper span {
+.skill h2 {
     position: relative;
     color: #F8DE65;
-    transform-style: preserve-3d;
-    perspective: 550px;
-    z-index: 1;
+    font-weight: 600;
+    -webkit-box-reflect: below -120px linear-gradient(transparent,#0008);
+    text-shadow: 0 0 10px #ff8c3b,
+    0 0 40px #ff8c3b,
+    0 0 80px #ff8c3b,
+    0 0 160px #ff8c3b,
+    0 0 240px #ff8c3b;
 }
-.wrapper span::before, span::after {
-    content: attr(data-wrap);
-    position: absolute;
-    left: 0;
-    transform-origin: 0 50%;
-    transition: all .3s;
+svg {
+    width: 0;
+    height: 0;
 }
-.wrapper span::before {
-    transform: scale(1.01, 1) skew(0deg, 1deg);
-    color: transparent;
-    text-shadow: 0 0 0 rgba(0,0,0,0.15);
+.word {
+    margin: 0;
+    text-transform: uppercase;
+    transition: opacity 250ms ease;
 }
-.wrapper span::after {
-    transition: all 250ms ease;
-    backface-visibility: hidden;
-    text-shadow: 2px 0 1px hsla(0, 0%, 0%, 0.05);
-    transform: rotateY(-15deg);
+.fancy span {
+    display: inline-block;
 }
-.wrapper span:hover::before {
-    transform: scale(0.85, 1) skew(0deg, 10deg);
+.fancy > .outer {
+    transition: transform 350ms ease;
 }
-.wrapper span:hover::after {
-    transform: rotateY(-40deg);
+.fancy:hover > .outer {
+    transition-duration: 800ms;
+}
+.fancy:hover > .outer > .inner {
+    animation: float 5s ease infinite;
+}
+.fancy:hover > .outer > .inner > .letter {
+    background: navajowhite;
+    background-size: 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: background-pan 150s linear infinite;
+}
+.fancy:hover > .outer:nth-child(1) {
+    transform: translate(-80%, 60%) rotate(8deg);
+}
+.fancy:hover > .outer:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+}
+.fancy:hover > .outer:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+}
+.fancy:hover > .outer:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+.fancy:hover > .outer:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+}
+.fancy:hover > .outer:nth-child(6) {
+    transform: translate(0%, 20%) rotate(-3deg);
+}
+.fancy:hover > .outer:nth-child(7) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+.fancy:hover > .outer:nth-child(8) {
+    transform: translate(0%, 15%) rotate(10deg);
+}
+.fancy:hover > .outer:nth-child(9) {
+    transform: translate(0%, -50%) rotate(8deg);
+}
+.fancy:hover > .outer:nth-child(10) {
+    transform: translate(0%, 15%) rotate(-6deg);
+}
+.fancy:hover > .outer:nth-child(11) {
+    transform: translate(50%, -10%) rotate(-3deg);
+}
+.fancy:hover > .outer:nth-child(12) {
+    transform: translate(120%, -30%) rotate(-10deg);
+}
+.fancy:hover > .outer:nth-child(13) {
+    transform: translate(70%, 10%) rotate(10deg);
+}
+.fancy:hover > .outer:nth-child(14) {
+    transform: translate(0%, -30%) rotate(-8deg);
 }
 .img-competence {
     width: 60%;
     height: auto;
     margin-left: 30px;
     position: relative;
+}
+.fancy2 span {
+    display: inline-block;
+}
+.fancy2 > .outer {
+    transition: transform 350ms ease;
+}
+.fancy2:hover > .outer {
+    transition-duration: 800ms;
+}
+.fancy2:hover > .outer > .inner {
+    animation: float 5s ease infinite;
+}
+.fancy2:hover > .outer > .inner > .letter {
+    background: navajowhite;
+    background-size: 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: background-pan 150s linear infinite;
+}
+.fancy2:hover > .outer:nth-child(1) {
+    transform: translate(-80%, 60%) rotate(8deg);
+}
+.fancy2:hover > .outer:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+}
+.fancy2:hover > .outer:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+}
+.fancy2:hover > .outer:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+.fancy2:hover > .outer:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+}
+.fancy2:hover > .outer:nth-child(6) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+.fancy2:hover > .outer:nth-child(7) {
+    transform: translate(120%, -30%) rotate(-10deg);
+}
+.fancy2:hover > .outer:nth-child(8) {
+    transform: translate(70%, 10%) rotate(10deg);
 }
 .img-langue {
     width: 40%;
@@ -346,9 +427,13 @@ h4 {
     }
 }
 .font-text {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 2.5rem;
     color: #F8DE65;
+
+    @media (max-width: 767px) {
+        font-size: 5rem;
+    }
 }
 .font-text-veille {
     font-size: 3.6rem;
@@ -368,7 +453,6 @@ h4 {
     display:flex;
     padding-top: 20px;
     justify-content:space-around;
-    opacity:0.60;
     position:fixed;left:0;right:0;top:0;
     z-index: 1000;
 }
@@ -386,7 +470,7 @@ h4 {
     border: 3px solid #fff;
     border-radius: 5px;
     transition: all ease .25s;
-
+    background-color: #534e51;
 }
 .menu a.actif {
     color: #F8DE65;
@@ -518,6 +602,38 @@ h4 {
 }
 .veille h2:hover:nth-child(4) {
     clip-path: circle(120% at 100% 50%);
+}
+.veille-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.veille-container .vbox {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    transition: 0.5s;
+}
+.veille-container .vbox img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.veille-container:hover > :not(:hover) {
+    margin: 0 -20px;
+    filter: drop-shadow(0 0 25px #000) drop-shadow(0 0 45px #000);
+    transform: perspective(500px) rotateY(45deg) scale(0.95);
+}
+.veille-container .vbox:hover ~ .vbox {
+    transform: perspective(500px) rotateY(-45deg) scale(0.95);
+}
+.veille-container .vbox:hover {
+    transform: perspective(500px) rotateY(0) scale(1.2);
+    z-index: 1000;
 }
 .subtitle {
     position: relative;
