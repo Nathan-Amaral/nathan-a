@@ -335,7 +335,7 @@ svg {
 .fa-size {
     font-size: 5rem;
 }
-.hover02 div span {
+.hover02 > div > span {
     position: absolute;
     bottom: -20px;
     left: 0;
@@ -351,7 +351,7 @@ svg {
     transition: all ease .25s;
     opacity: 0;
 }
-.hover02:hover div span {
+.hover02:hover > div > span {
     bottom: -2.25em;
     opacity: 1;
     text-align: center;
