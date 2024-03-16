@@ -12,7 +12,7 @@ title.innerHTML += `<span>${word[index]}</span>`
 
 typewriter(txt, index + 1)
 
-}, 300);
+}, 150);
 
 }
 

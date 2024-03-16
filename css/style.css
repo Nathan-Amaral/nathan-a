@@ -273,7 +273,7 @@ svg {
     transform: translate(120%, -30%) rotate(-10deg);
 }
 .fancy:hover > .outer:nth-child(13) {
-    transform: translate(70%, 10%) rotate(10deg);
+    transform: translate(-80%, 40%) rotate(12deg);
 }
 .fancy:hover > .outer:nth-child(14) {
     transform: translate(0%, -30%) rotate(-8deg);
