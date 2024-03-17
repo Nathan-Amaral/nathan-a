@@ -4,17 +4,17 @@ const txt = "Bienvenue sur mon Portfolio"
 
 function typewriter(word, index){
 
-if(index < word.length) {
+    if(index < word.length) {
 
-setTimeout(() => {
+        setTimeout(() => {
 
-title.innerHTML += `<span>${word[index]}</span>`
+        title.innerHTML += `<span>${word[index]}</span>`
 
-typewriter(txt, index + 1)
+        typewriter(txt, index + 1)
 
-}, 150);
+        }, 150);
 
-}
+    }
 
 }
 setTimeout(() => {
@@ -67,6 +67,10 @@ document.addEventListener('DOMContentLoaded', function () {
             cursor.style.height = '35px';
         }
         else if (e.target.tagName === 'VIDEO') {
+            cursor.style.width = '35px';
+            cursor.style.height = '35px';
+        }
+        else if (e.target.classList.contains('icon')) {
             cursor.style.width = '35px';
             cursor.style.height = '35px';
         }

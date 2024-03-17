@@ -15,7 +15,7 @@ body {
     background-size: 0;
     transform-origin: left;
     animation: scroll linear;
-    animation-timeline: scroll();
+    /* ne fonctionne pas sur firefox */ animation-timeline: scroll();
     animation-range-start: cover 100px;
     animation-range-end: cover 100%;
 }
@@ -27,7 +27,6 @@ body {
         background-size: 100% 5px;
     }
 }
-
 .custom-cursor {
     position:fixed;
     top: 0;
@@ -42,7 +41,6 @@ body {
     transform-origin: center;
     transition: transform ease .3s;
 }
-
 .container {
     background-color: #1C263D;
 }
@@ -119,7 +117,7 @@ h1 {
     text-align: center;
 
     @media (min-width: 1600px) {
-        font-size: 13rem;
+        font-size: 12rem;
     }
 }
 h1::after {
@@ -131,9 +129,9 @@ h1::after {
     background: #F8DE65;
     right: -15px;
     top: 0;
-    animation: cursor 1s infinite;
+    animation: write 1s infinite;
 }
-@keyframes cursor {
+@keyframes write {
 
     0% {
         opacity: 1;
@@ -163,6 +161,10 @@ h4 {
 }
 .mt-10 {
     margin-top: 6rem !important;
+}
+#quien {
+    transition: 0.2s;
+    /* ne fonctionne pas sur firefox */-webkit-box-reflect: below 1px linear-gradient(to bottom,transparent,#0008);
 }
 .card {
     width: 18.75em;
@@ -205,7 +207,6 @@ h4 {
     position: relative;
     color: #F8DE65;
     font-weight: 600;
-    -webkit-box-reflect: below -120px linear-gradient(transparent,#0008);
     text-shadow: 0 0 10px #ff8c3b,
     0 0 40px #ff8c3b,
     0 0 80px #ff8c3b,
