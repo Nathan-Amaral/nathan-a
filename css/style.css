@@ -289,6 +289,76 @@ svg {
     margin-left: 30px;
     position: relative;
 }
+.skill-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+}
+.skill-container .skill-card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #F8DE65;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+.skill-container .skill-card:hover {
+    height: 270px;
+}
+.skill-container .skill-card .skill-image {
+    position: absolute;
+    top: 20px;
+    width: 200px;
+    height: 170px;
+    background: white;
+    border-radius: 13px;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1000;
+}
+.skill-container .skill-card:hover .skill-image {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px #1C263D;
+}
+.skill-container .skill-card .skill-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.skill-container .skill-card .skill-content {
+    position: absolute;
+    top: 212px;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    overflow: hidden;
+    transition:  0.5s
+}
+.skill-container .skill-card:hover .skill-content {
+    top: 85px;
+    height: 200px;
+}
+.skill-container .skill-card .skill-content h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #222222;
+}
+.skill-container .skill-card .skill-content p {
+    color: #222222;
+    font-size: 1.05em;
+}
 .fancy2 span {
     display: inline-block;
 }
