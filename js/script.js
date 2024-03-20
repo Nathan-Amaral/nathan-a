@@ -56,12 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     let cursor = document.querySelector(".custom-cursor");
 
-    document.addEventListener('mousemove', function (e) {
+    document.addEventListener('mousemove', (e)=> {
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
     });
 
-    document.addEventListener('mouseover', function (e) {
+    document.addEventListener('mouseover', (e) =>{
         if (e.target.tagName === 'A') {
             cursor.style.width = '35px';
             cursor.style.height = '35px';
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    document.addEventListener('mouseout', function (e) {
+    document.addEventListener('mouseout', (e) => {
         cursor.style.width = '20px';
         cursor.style.height = '20px';
     });
