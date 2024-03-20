@@ -2,6 +2,7 @@ body {
     background-color: #1C263D;
     font-family: "Bauhaus 93",sans-serif;
     cursor: none;
+    width: 100%;
 }
 .scroller {
     position: fixed;
@@ -317,16 +318,16 @@ svg {
     top: 20px;
     width: 200px;
     height: 170px;
-    background: white;
+    background: transparent;
     border-radius: 13px;
     transition: 0.5s;
     overflow: hidden;
-    z-index: 1000;
 }
 .skill-container .skill-card:hover .skill-image {
     top: -100px;
     scale: 0.75;
     box-shadow: 0 15px 45px #1C263D;
+    background: white;
 }
 .skill-container .skill-card .skill-image img {
     position: absolute;
@@ -334,7 +335,7 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 15px;
 }
 .skill-container .skill-card .skill-content {
@@ -403,7 +404,7 @@ svg {
     transform: translate(70%, 10%) rotate(10deg);
 }
 .img-langue {
-    width: 40%;
+    width: 60%;
     height: auto;
     margin-left: 65px;
 }
@@ -429,6 +430,7 @@ svg {
 .hover02:hover > div > img:hover + span {
     bottom: -2.25em;
     opacity: 1;
+    padding-left: 60px;
     text-align: center;
 }
 .content {
