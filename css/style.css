@@ -45,6 +45,7 @@ body {
 }
 .container {
     background-color: #1C263D;
+    max-width: 1160px;
 }
 a {
     cursor: none;
@@ -517,6 +518,7 @@ svg {
     font-size: 3.6rem;
     line-height: 5rem;
     color: #F8DE65;
+    //font-family: ;
 
     @media (min-width: 320px) {
         font-size: 1.8rem;

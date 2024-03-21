@@ -215,3 +215,17 @@ const enhance2 = id => {
 }
 
 enhance2("explosive2");
+
+// href
+
+document.querySelector('a[href="#titre"]').addEventListener('click', function(e) {
+    e.preventDefault(); // Pour éviter le comportement par défaut du lien
+
+    const targetElement = document.getElementById('titre');
+    const topOffset = targetElement.getBoundingClientRect().top;
+
+    window.scrollTo({
+        top: topOffset,
+        behavior: 'smooth' // Pour un défilement fluide
+    });
+});
