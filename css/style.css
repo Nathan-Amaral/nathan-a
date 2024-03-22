@@ -9,6 +9,10 @@ body {
     src: url("../police/Bauhaus 93 Regular.ttf") format("truetype"),
     url("/police/BAUHS93.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Magneto";
+    src: url("../police/MAGNETOB.TTF") format("truetype");
+}
 .scroller {
     position: fixed;
     top: 0;
