@@ -4,6 +4,11 @@ body {
     cursor: none;
     width: 100%;
 }
+@font-face {
+    font-family: "Bauhaus 93";
+    src: url("../police/Bauhaus 93 Regular.ttf") format("truetype"),
+    url("/police/BAUHS93.ttf") format("truetype");
+}
 .scroller {
     position: fixed;
     top: 0;
@@ -518,7 +523,7 @@ svg {
     font-size: 3.6rem;
     line-height: 5rem;
     color: #F8DE65;
-    //font-family: ;
+    font-family: "Bauhaus 93",serif;
 
     @media (min-width: 320px) {
         font-size: 1.8rem;
