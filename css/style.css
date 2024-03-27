@@ -1,5 +1,5 @@
 body {
-    background-color: #463f32;
+    background-color: #3a352c;
     font-family: "Bauhaus 93",sans-serif;
     cursor: none;
     width: 100%;
@@ -133,7 +133,7 @@ body {
     }
 }
 .container {
-    background-color: #463f32;
+    background-color: #3a352c;
     max-width: 1160px;
 }
 a {
@@ -148,14 +148,14 @@ a:hover {
 }
 input {
     border: none;
-    background-color: #463f32;
+    background-color: #3a352c;
     color: #F8DE65;
     outline: none;
     cursor: none;
 }
 textarea {
     border: none;
-    background-color: #463f32;
+    background-color: #3a352c;
     color: #F8DE65;
     outline: none;
     cursor: none;
@@ -217,11 +217,9 @@ h1 {
     0% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -412,7 +410,7 @@ svg {
 .skill-container .skill-card:hover .skill-image {
     top: -100px;
     scale: 0.75;
-    box-shadow: 0 15px 45px #463f32;
+    box-shadow: 0 15px 45px #3a352c;
     background: white;
 }
 .skill-container .skill-card .skill-image img {
@@ -440,12 +438,12 @@ svg {
 .skill-container .skill-card .skill-content h3 {
     font-size: 2em;
     font-weight: 700;
-    text-stroke: 1px #463f32;
-    -webkit-text-stroke: 1px #463f32;
+    /*text-stroke: 1px #3a352c;
+    -webkit-text-stroke: 1px #3a352c;*/
     color: #ffffff;
 }
 .skill-container .skill-card .skill-content p {
-    color: #463f32;
+    color: #3a352c;
     font-size: 1.05em;
 }
 .fancy2 span {
@@ -532,7 +530,7 @@ svg {
 }
 .content h2:nth-child(1).sea{
     color: transparent;
-    -webkit-text-stroke: 3px #463f32;
+    -webkit-text-stroke: 3px #3a352c;
      filter: blur(3px);
 }
 .content h2:nth-child(3).sea{
