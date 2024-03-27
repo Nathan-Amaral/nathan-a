@@ -54,12 +54,14 @@ document.addEventListener('DOMContentLoaded', function () {
 // custom cursor
 
 document.addEventListener('DOMContentLoaded', function () {
-    let cursor = document.querySelector(".custom-cursor");
+    const cursor = document.getElementById("custom-cursor");
 
-    document.addEventListener('mousemove', (e)=> {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    });
+    window.onmousemove = (e)=> {
+        const x = e.clientX - cursor.offsetWidth / 2,
+              y = e.clientY - cursor.offsetHeight / 2;
+
+        cursor.style.transform = `translate(${x}px, ${y}px)`;
+    }
 
     document.addEventListener('mouseover', (e) =>{
         if (e.target.tagName === 'A') {
@@ -229,3 +231,12 @@ document.querySelector('a[href="#titre"]').addEventListener('click', function(e)
         behavior: 'smooth' // Pour un défilement fluide
     });
 });
+
+// background
+
+const bg = document.getElementById('header');
+window.addEventListener('scroll', function (){
+    //bg.style.backgroundSize = (100 - window.pageYOffset / 19) + '%';
+    bg.style.opacity = 1 - window.pageYOffset / 700;
+});
+

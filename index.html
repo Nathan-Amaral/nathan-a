@@ -7,15 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚹</text></svg>">
 
 </head>
 <body>
-<div class="custom-cursor"></div>
+<div id="custom-cursor"></div>
 <div class="scroller"></div>
 
 <ul class="menu">
@@ -25,14 +22,19 @@
     <li><a href="#Veille" class="actif">Veille technologique </a></li>
     <li><a href="#Contact" class="actif">Contact </a></li>
 </ul>
-<h1 class="text-center mb-10" id="titre" aria-label="Bienvenue sur mon Portfolio"></h1>
+<div id="header">
+    <h1 class="text-center mb-10" id="titre" aria-label="Bienvenue sur mon Portfolio"></h1>
+    <div class="bird bird-1"></div>
+    <div class="bird bird-2"></div>
+    <div class="bird bird-3"></div>
+</div>
 <div class="container">
     <section class="" id="Presentation">
-        <h2 class="text-center" id="quien" style="margin-bottom: 9rem"> Qui suis-je ?</h2>
+        <h2 class="text-center mt-10" id="quien" style="margin-bottom: 9rem"> Qui suis-je ?</h2>
         <div class="position-relative row mx-auto mb-5">
             <div class="col-6 mb-0">
                 <div class="container">
-                    <div class="card" style="background-color: #1C263D !important; border: none;">
+                    <div class="card" style="background-color: #463f32 !important; border: none;">
                         <div class="content-card">
                             <img class="" src="images/moi.jpg" alt="c'est moi">
                         </div>
@@ -225,7 +227,7 @@
         </div>
     </section>
 
-    <section class="my-4" id="Realisation">
+    <section class="mt-10 mb-5" id="Realisation">
         <div class="content mb-10 mt-10">
             <h2 class="sea">Réalisations</h2>
             <h2 class="sea"> Réalisations </h2>
@@ -245,9 +247,37 @@
             <span style="--i:11;">.</span>
             <span style="--i:12;">.</span>
         </div>
+          <div class="gallery-content mb-20">
+            <div class="photo-gallery">
+                <div class="column">
+                    <div class="photo">
+                        <img src="images/stage2-1.png" alt="LIVRE BLANC GENESII">
+                    </div>
+                    <div class="photo">
+                        <img src="images/stage2-5.png" alt="BILLETTERIE ES SEYNOD">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="images/ecomobil-1.png" alt="ECOMOBIL">
+                    </div>
+                    <div class="photo">
+                        <img src="images/musee-1.png" alt="MUSEE">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="images/stage1-1.png" alt="STAGE1">
+                    </div>
+                    <div class="photo">
+                        <img src="images/gaudi-1.png" alt="GAUDI">
+                    </div>
+                </div>
+            </div>
+          </div>
         <div class="d-flex mb-5" data-aos="fade-right" data-aos-duration="1000">
             <div>
-                <p class="font-text subtitle">Projet stage de 2ème année de BTS (janvier à février 2024) :</p><br>
+                <p class="font-text subtitle">Projet(s) stage de 2ème année de BTS (janvier à février 2024) :</p><br>
                 <p>Modification de plusieurs sites existants, avec ajouts de fonctionnalités (PHP,HTML,CSS,Javascript) et développement système de QR code.</p>
             </div>
             <div>
@@ -284,18 +314,31 @@
         <div class="d-flex mb-5" data-aos="fade-left" data-aos-duration="1000">
             <div>
                 <video class="rounded-lg mr-5" controls width="500">
-                    <source src="/images/Expostion%20Antonio%20Gaudi.mp4" type="MIME" />
+                    <source src="/images/Ecomobil.mp4" type="video/mp4" />
                 </video>
             </div>
+            <div>
+                <p class="font-text subtitle">Projet outil de gestion de visiteurs<br>(septembre à décembre 2023) :</p><br>
+                <p>Création d’un site en PHP, HTML, CSS  et Javascript, avec architecture MVC et lié à une base de données,
+                    site avec connexion et inscription de manière sécurisée (contrôle du mot de passe et de l'email);
+                    puis accès une plateforme de réservation sur-mesure de véhicules verts.</p>
+            </div>
+        </div>
+        <div class="d-flex mb-5" data-aos="fade-right" data-aos-duration="1000">
             <div class="">
                 <p class="font-text subtitle">Projet exposition Antoni GAUDI (septembre à décembre 2022) :</p><br>
                 <p>Création d’un site HTML/CSS  et javascript, respirant l’artiste et présentant l’exposition future en son honneur au musée d’Orsay.</p>
             </div>
+            <div>
+                <video class="rounded-lg mr-5" controls width="500">
+                    <source src="/images/Expostion%20Antonio%20Gaudi.mp4" type="MIME" />
+                </video>
+            </div>
         </div>
     </section>
 
-    <section class="my-5" id="Veille">
-        <div class="veille text-center" style="margin-top: 13rem; margin-bottom: 10rem;">
+    <section class="" id="Veille">
+        <div class="veille text-center" style="margin-top: 13rem; margin-bottom: 12rem;">
             <h2 class="">Veille Technologique</h2>
             <h2 class="">Veille Technologique</h2>
             <h2 class="">Veille Technologique</h2>
@@ -331,9 +374,9 @@
         <div class="row">
             <div class="col-md-4 font-text-veille">
                 <div class="subtitle mb-2"> Sites spécialisés :</div>
-                <a href="https://www.nextinpact.com/" target="_blank"  class="d-flex align-items-baseline gap-3" data-aos="fade-right" data-aos-duration="700">
+                <a href="https://www.undernews.fr/" target="_blank"  class="d-flex align-items-baseline gap-3" data-aos="fade-right" data-aos-duration="700">
                     <i class="fas fa-globe mx-2 "></i>
-                    Nextinpact
+                    Undernews
                 </a>
                 <a href="https://www.zataz.com/" target="_blank"  class="d-flex align-items-baseline gap-3" data-aos="fade-right" data-aos-duration="1000">
                     <i class="fas fa-globe mx-2"></i>
@@ -382,7 +425,7 @@
     </section>
 
     <section id="Contact" class="my-5">
-        <p class="flash text-center my-5">
+        <p class="flash text-center mt-10 mb-5">
             <span data-flash="C">C</span>
             <span data-flash="o">o</span>
             <span data-flash="n">n</span>
