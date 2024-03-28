@@ -55,6 +55,7 @@ body {
 .menu {
     display:flex;
     padding-top: 20px;
+    margin-inline: 5px;
     justify-content:space-around;
     position:fixed;left:0;right:0;top:0;
     z-index: 1000;
@@ -129,7 +130,7 @@ body {
         left: -10%;
     }
     100% {
-        left: 110%;
+        left: 100%;
     }
 }
 .container {
@@ -617,6 +618,11 @@ svg {
     .photo-gallery {
         flex-direction: column;
     }
+}
+iframe {
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: none;
 }
 .font-text {
     font-size: 2.2rem;
