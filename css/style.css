@@ -624,6 +624,14 @@ iframe {
         line-height: 2.5rem;
     }
 }
+.font-text-veille:hover p {
+    color: white;
+    transition: 0.5s;
+}
+.font-text-veille:hover span {
+    color: #F8DE65;
+    transition: 0.5s;
+}
 .text-container {
     display: inline-block;
     animation: revealText 6s steps(28) forwards;
