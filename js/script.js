@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // stars
 
-function stars(){
+/*function stars(){
         let e = document.createElement('div');
         e.setAttribute('class','star');
         document.body.appendChild(e);
@@ -138,7 +138,7 @@ function stars(){
 
 setInterval(function(){
     stars()
-},100)
+},100)*/
 
 //fancy
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
