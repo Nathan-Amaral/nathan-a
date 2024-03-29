@@ -283,6 +283,15 @@ h4 {
 .text-card {
     max-height: 28.125em;
 }
+.text-card:hover p{
+    color: white;
+    transition: 0.5s;
+}
+.text-card:hover span {
+    color : #F8DE65;
+    transition: 0.5s;
+}
+
 .skill {
     position: relative;
     width: 100%;
@@ -321,7 +330,7 @@ svg {
     animation: float 5s ease infinite;
 }
 .fancy:hover > .outer > .inner > .letter {
-    background: navajowhite;
+    background: white;
     background-size: 1000%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -441,7 +450,7 @@ svg {
     font-weight: 700;
     /*text-stroke: 1px #3a352c;
     -webkit-text-stroke: 1px #3a352c;*/
-    color: #ffffff;
+    color: #3a352c;
 }
 .skill-container .skill-card .skill-content p {
     color: #3a352c;
@@ -460,7 +469,7 @@ svg {
     animation: float 5s ease infinite;
 }
 .fancy2:hover > .outer > .inner > .letter {
-    background: navajowhite;
+    background: white;
     background-size: 1000%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
