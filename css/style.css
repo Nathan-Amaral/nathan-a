@@ -892,3 +892,21 @@ form {
     color: #F8DE65;
     cursor: none;
 }
+.mystery {
+    position: relative;
+}
+.mystery img {
+    position: absolute;
+    left: 50%;
+    bottom: 110%;
+    transform: translateX(-50%);
+    width: 100px;
+    max-width: 100px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    transition-delay: 1s;
+}
+.mystery:hover img {
+    opacity: 1;
+}
