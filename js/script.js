@@ -63,6 +63,21 @@ document.addEventListener('DOMContentLoaded', function () {
         cursor.style.transform = `translate(${x}px, ${y}px)`;
     }
 
+    window.onclick = (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+
+        let span = document.createElement("span");
+        span.classList.add("clic_effet");
+        span.style.top = y + "px";
+        span.style.left = x + "px";
+        document.body.appendChild(span);
+
+        setTimeout(() => {
+            span.remove();
+        }, 600);
+    }
+
     document.addEventListener('mouseover', (e) =>{
         if (e.target.tagName === 'A') {
             cursor.style.width = '35px';

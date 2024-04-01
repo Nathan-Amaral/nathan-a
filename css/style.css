@@ -13,6 +13,10 @@ body {
     font-family: "Magneto";
     src: url("../police/MAGNETOB.TTF") format("truetype");
 }
+@font-face {
+    font-family: "Inspire";
+    src: url("../police/inspire.ttf") format("truetype");
+}
 .scroller {
     position: fixed;
     top: 0;
@@ -51,6 +55,28 @@ body {
     mix-blend-mode: exclusion;
     transform-origin: center;
     transform: translate(-50%, -50%);
+}
+.clic_effet {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #F8DE65;
+    pointer-events: none;
+    opacity: 0;
+    margin-top: -45px;
+    margin-left: -45px;
+    border-radius: 50%;
+    animation: clic_animation linear 0.6s;
+}
+@keyframes clic_animation {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
 }
 .menu {
     display:flex;
@@ -200,8 +226,8 @@ p {
     }
 }
 h1 {
-    font-family: "Bauhaus 93", sans-serif;
-    font-size: 11rem;
+    font-family: "Inspire";
+    font-size: 10rem;
     font-weight: 500;
     color: #F8DE65;
     display: inline-block;
@@ -228,6 +254,7 @@ h1 {
 h2 {
     font-size: 5rem;
     color: #F8DE65;
+
 }
 h3 {
     font-size: 2.5rem;
