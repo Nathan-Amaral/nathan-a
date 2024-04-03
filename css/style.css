@@ -17,6 +17,10 @@ body {
     font-family: "Inspire";
     src: url("../police/inspire.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Intro";
+    src: url("../police/Intro.otf") format("truetype");
+}
 .scroller {
     position: fixed;
     top: 0;
@@ -254,7 +258,6 @@ h1 {
 h2 {
     font-size: 5rem;
     color: #F8DE65;
-
 }
 h3 {
     font-size: 2.5rem;
@@ -531,9 +534,6 @@ svg {
     height: auto;
     margin-left: 65px;
 }
-.fa-size {
-    font-size: 5rem;
-}
 .hover02 > div > span {
     position: absolute;
     bottom: -20px;
@@ -639,6 +639,16 @@ iframe {
     @media (max-width: 767px) {
         font-size: 5rem;
     }
+}
+.langage {
+    background: #F8DE65;
+    color: #3a352c;
+    border: 10px solid #F8DE65;
+    border-radius: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2em;
+    font-family: "Intro";
 }
 .font-text-veille {
     font-size: 3.6rem;
