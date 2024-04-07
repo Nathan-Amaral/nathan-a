@@ -83,6 +83,10 @@ document.addEventListener('DOMContentLoaded', function () {
             cursor.style.width = '35px';
             cursor.style.height = '35px';
         }
+        else if (e.target.tagName === 'I' && !e.target.classList.contains('i-exclu')) {
+            cursor.style.width = '35px';
+            cursor.style.height = '35px';
+        }
         else if (e.target.tagName === 'VIDEO') {
             cursor.style.width = '35px';
             cursor.style.height = '35px';

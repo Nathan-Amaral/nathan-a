@@ -2,7 +2,6 @@ body {
     background-color: #3a352c;
     font-family: "Bauhaus 93",sans-serif;
     cursor: none;
-    width: 100%;
 }
 @font-face {
     font-family: "Bauhaus 93";
@@ -45,6 +44,22 @@ body {
         background-size: 100% 5px;
     }
 }
+#btn-top {
+    width: 60px;
+    height: 60px;
+    background-color: #F8DE65;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 74;
+    top: 85%;
+    left: 92%;
+    display: flex;
+}
+#btn-top i {
+    color: #3a352c;
+    font-size: 2em;
+    margin: auto;
+}
 #custom-cursor {
     position: fixed;
     width: 20px;
@@ -52,7 +67,7 @@ body {
     border-radius:50%;
     background: #F8DE65;
     pointer-events: none;
-    z-index:999999;
+    z-index: 999999;
     box-shadow: 0 0 20px #F8DE65,
     0 0 60px #F8DE65,
     0 0 110px #F8DE65;
@@ -95,12 +110,12 @@ body {
 }
 .menu a {
     font-family: 'Magneto', sans-serif;
-    display:block;
-    min-width:120px;
-    margin:0.2rem;
-    padding:0.6rem 0;
-    text-align:center;
-    text-decoration:none;
+    display: block;
+    min-width: 120px;
+    margin: 0.2rem;
+    padding: 0.6rem 0;
+    text-align: center;
+    text-decoration: none;
     border: 3px solid #fff;
     border-radius: 5px;
     transition: all ease .25s;
@@ -120,7 +135,8 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url("../images/image.jpg");
-    background-size: 100%;
+    background-size: cover;
+    overflow: hidden;
     background-position: center;
     background-attachment: fixed;
 }
@@ -132,35 +148,35 @@ body {
 }
 .bird-1 {
     top: 5%;
-    left: -10%;
-    animation: birdFly 1s steps(10) infinite, birdMove 15s linear infinite;
+    left: -7%;
+    animation: birdFly 0.9s steps(10) infinite, birdMove 15s linear infinite;
 }
 .bird-2 {
     top: 20%;
-    left: -10%;
-    animation: birdFly 1s steps(10) infinite, birdMove 15s linear infinite;
+    left: -7%;
+    animation: birdFly 0.9s steps(10) infinite, birdMove 15s linear infinite;
     animation-delay: 3s;
 }
 .bird-3 {
     top: 10%;
-    left: -10%;
-    animation: birdFly 1s steps(10) infinite, birdMove 15s linear infinite;
+    left: -7%;
+    animation: birdFly 0.9s steps(10) infinite, birdMove 15s linear infinite;
     animation-delay: 5s;
 }
 @keyframes birdFly {
     0% {
-        background-position: 0px;
+        background-position-x: 0px;
     }
     100% {
-        background-position: 1305px;
+        background-position-x: 1305px;
     }
 }
 @keyframes birdMove {
     0% {
-        left: -10%;
+        left: 0%;
     }
     100% {
-        left: 100%;
+        left: 110%;
     }
 }
 .container {
@@ -920,9 +936,9 @@ form {
         padding: 0;
         border: none;
         border-radius: 0;
-        -webkit-text-stroke: 2px #F8DE65;
+    -webkit-text-stroke: 2px #F8DE65;
         color: transparent;
-        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 #btn-submit:hover {
     background: none;
