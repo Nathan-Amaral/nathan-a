@@ -54,11 +54,16 @@ body {
     top: 85%;
     left: 92%;
     display: flex;
+    box-shadow:  0 10px 11px #222222;
 }
 #btn-top i {
     color: #3a352c;
     font-size: 2em;
     margin: auto;
+    rotate: 15deg;
+}
+#btn-top:hover i {
+    rotate: 0deg;
 }
 #custom-cursor {
     position: fixed;
