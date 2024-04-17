@@ -2,6 +2,7 @@ body {
     background-color: #3a352c;
     font-family: "Bauhaus 93",sans-serif;
     cursor: none;
+    text-shadow: 0 1px 2px rgba(0,0,0,.65);
 }
 @font-face {
     font-family: "Bauhaus 93";
@@ -69,14 +70,13 @@ body {
     position: fixed;
     width: 20px;
     height: 20px;
-    border-radius:50%;
+    border-radius: 50%;
     background: #F8DE65;
     pointer-events: none;
-    z-index: 999999;
+    z-index: 9999;
     box-shadow: 0 0 20px #F8DE65,
-    0 0 60px #F8DE65,
-    0 0 110px #F8DE65;
-    mix-blend-mode: exclusion;
+    0 0 60px #F8DE65;
+    mix-blend-mode: difference;
     transform-origin: center;
     transform: translate(-50%, -50%);
 }
@@ -87,8 +87,8 @@ body {
     border: 5px solid #F8DE65;
     pointer-events: none;
     opacity: 0;
-    margin-top: -45px;
-    margin-left: -45px;
+    margin-top: -39px;
+    margin-left: -40px;
     border-radius: 50%;
     animation: clic_animation linear 0.6s;
 }
@@ -153,18 +153,18 @@ body {
 }
 .bird-1 {
     top: 5%;
-    left: -7%;
+    left: -10%;
     animation: birdFly 0.9s steps(10) infinite, birdMove 15s linear infinite;
 }
 .bird-2 {
     top: 20%;
-    left: -7%;
+    left: -10%;
     animation: birdFly 0.9s steps(10) infinite, birdMove 15s linear infinite;
     animation-delay: 3s;
 }
 .bird-3 {
     top: 10%;
-    left: -7%;
+    left: -10%;
     animation: birdFly 0.9s steps(10) infinite, birdMove 15s linear infinite;
     animation-delay: 5s;
 }
@@ -368,6 +368,7 @@ svg {
     margin: 0;
     text-transform: uppercase;
     transition: opacity 250ms ease;
+    text-shadow: none;
 }
 .fancy span {
     display: inline-block;
@@ -648,10 +649,14 @@ svg {
         transform: translateY(0px);
     }
 }
+#cotainer {
+    pointer-events: auto;
+}
 iframe {
     border-radius: 20px;
     margin-right: 20px;
     cursor: none;
+    z-index: 3;
 }
 .font-text {
     font-size: 2.2rem;
