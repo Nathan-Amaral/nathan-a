@@ -91,6 +91,10 @@ document.addEventListener('DOMContentLoaded', function () {
             cursor.style.width = '35px';
             cursor.style.height = '35px';
         }
+        else if (e.target.tagName === 'IMG' && !e.target.classList.contains('img-exclu')) {
+            cursor.style.width = '35px';
+            cursor.style.height = '35px';
+        }
         else if (e.target.classList.contains('icon')) {
             cursor.style.width = '35px';
             cursor.style.height = '35px';

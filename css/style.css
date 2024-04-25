@@ -15,7 +15,7 @@ body {
 }
 @font-face {
     font-family: "Inspire";
-    src: url("../police/inspire.ttf") format("truetype");
+    src: url("../police/inspire.woff2") format("truetype");
 }
 @font-face {
     font-family: "Intro";
