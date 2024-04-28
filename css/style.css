@@ -649,9 +649,6 @@ svg {
         transform: translateY(0px);
     }
 }
-#cotainer {
-    pointer-events: auto;
-}
 iframe {
     border-radius: 20px;
     margin-right: 20px;
